@@ -1,0 +1,100 @@
+mat-cell:first-of-type {
+    padding-right: 100px !important;
+}
+mat-header-cell:first-of-type {
+    padding-right: 100px !important;
+}
+
+mat-header-cell:last-of-type {
+
+}
+mat-cell:last-of-type {
+
+}
+
+@media only screen and (max-width: 1000px) {
+    mat-header-cell:nth-of-type(n+4):nth-last-of-type(n+2) {
+        display: none;
+    }
+    mat-cell:nth-of-type(n+4):nth-last-of-type(n+2) {
+        display: none;
+    }
+
+    mat-header-cell:first-of-type {
+        display: none;
+    }
+    mat-cell:first-of-type {
+        display: none;
+    }
+}
+
+
+/* popup
+----------------------------------------------------- */
+.card-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.centered_map {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -12px;
+}
+
+.popup-info-container {
+    min-width: 300px;
+    max-width: 600px;
+    height: 400px;
+    overflow: auto;
+    background: white;
+    position: absolute;
+    z-index: 210;
+    border-radius: 5px;
+    display: none;
+}
+
+.popup-info-close {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    color: #777;
+}
+
+#popup-info__summary {
+    text-align: center;
+    font-weight: bold;
+}
+
+.popup-info {
+    display: block;
+    padding: 10px;
+    color: #111;
+}
+
+#popup-info__year {
+    padding-top: 20px;
+}
+
+.card-btn {
+    cursor: pointer;
+    color: white;
+    background: cornflowerblue;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 3px;
+    padding: 10px 13px;
+    font-size: 14px;
+    min-width: 75px;
+    text-align: center;
+}
+
+#popup-info__contacted {
+    font-size: .7em;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}

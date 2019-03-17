@@ -1,0 +1,137 @@
+.loading {
+  display: none;
+}
+
+.page-title {
+  font-weight: 400;
+}
+
+.ttp-title {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 100;
+  font-size: 40px;
+  color: white;
+  background: darkslategray;
+  padding: 10px;
+  border-radius: 50%;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//  Sub Navigation
+/////////////////////////////////////////////////////////
+.sub-nav {
+  text-align: center;
+  margin: 5px 0px;
+}
+
+.sub-nav-link {
+  text-decoration: none;
+  font-size: .85em;
+  margin: 0px 15px;
+  padding-bottom: 3px;
+}
+
+.sub-active-route {
+  border-bottom: 2px solid var(--google-blue);
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//  Tables
+/////////////////////////////////////////////////////////
+.table-container {
+  height: calc(100% - 125px);
+  position: relative;
+}
+
+.above-table {
+  //margin-left: 5%;
+}
+
+.table-search {
+  float: left;
+  margin-left: 5%;
+}
+
+.table-title {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.table-button {
+  text-decoration: none;
+  color: var(--google-blue);
+  float: right;
+  margin-right: 5%;
+  cursor: pointer;
+}
+
+.mat-table {
+  overflow: auto;
+  height: 100%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mat-header-row {
+  padding-left: 20px;
+}
+
+.mat-header-cell {
+  padding: 0 10px;
+}
+
+.mat-row {
+  padding-left: 20px;
+  border: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mat-row:nth-of-type(odd) {
+  background: #f4f4f4
+}
+
+.mat-cell {
+  padding: 0 15px;
+}
+
+.mat-paginator {
+  //width: 100%;
+  //position: fixed;
+  //right: 0px;
+  //bottom: 0px;
+  padding-right: 20px;
+}
+
+.table-first-child {
+  min-width: 210px;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//  Icons
+/////////////////////////////////////////////////////////
+.delete-icon {
+  color: #666666;
+  cursor: pointer;
+}
+
+//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//  Utility Classes
+/////////////////////////////////////////////////////////
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
