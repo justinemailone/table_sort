@@ -73,7 +73,7 @@ export class AppComponent implements OnInit {
     }
 
     onSelect(customer) {
-        if (window.screen.width < 1000) {
+        if (this.getViewport().width < 1000) {
             this.selectedCustomer = customer;
             this.showDetails = true;
         }
@@ -83,6 +83,17 @@ export class AppComponent implements OnInit {
         console.log(customer);
     }
 
+    // https://gist.github.com/ashhitch/8dc37f045961f8e797242c40392b6a49
+    getViewport(): any {
+        let win = window,
+            d = document,
+            e = d.documentElement,
+            g = d.getElementsByTagName('body')[0],
+            w = win.innerWidth || e.clientWidth || g.clientWidth,
+            h = win.innerHeight || e.clientHeight || g.clientHeight;
+
+        return {width: w, height: h};
+    }
 }
 
 export interface MobileOilCustomer {
