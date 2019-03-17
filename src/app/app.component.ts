@@ -14,7 +14,7 @@ import {HttpClient} from '@angular/common/http';
 export class AppComponent implements OnInit {
 
     displayedColumns = ['email', 'name', 'phone', 'year', 'make', 'model', 'created_date', 'contacted'];
-    dataSource: MatTableDataSource<MobileOilCustomer>;
+    dataSource: MatTableDataSource<Customer>;
 
     data = [{
         'email': 'someemail@example.com',
@@ -53,12 +53,7 @@ export class AppComponent implements OnInit {
 
     selectedCustomer: Customer;
 
-    constructor(
-        private router: Router,
-        private route: ActivatedRoute,
-        private http: HttpClient
-    ) {
-    }
+    constructor() { }
 
     applyFilter(filterValue: string) {
         filterValue = filterValue.trim();
@@ -79,7 +74,7 @@ export class AppComponent implements OnInit {
         }
     }
 
-    onContactedChange(customer: MobileOilCustomer) {
+    onContactedChange(customer: Customer) {
         console.log(customer);
     }
 
@@ -96,7 +91,7 @@ export class AppComponent implements OnInit {
     }
 }
 
-export interface MobileOilCustomer {
+export interface Customer {
     email: string;
     name: string;
     phone: string;
