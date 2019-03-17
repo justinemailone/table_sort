@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
 
     showDetails = false;
 
-    selectedCustomer: MobileOilCustomer;
+    selectedCustomer: Customer;
 
     constructor(
         private router: Router,
